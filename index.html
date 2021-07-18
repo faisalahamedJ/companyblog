@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+        <div class="header">           
+            
+                    <div class="brandName">
+                        <img src="./images/circle-1613999_640.png" alt="">
+                    </div>                    
+                
+                    <nav class="navbar">
+                        <ul class="nav_ul" id="nav_ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#about">About Us</a></li> 
+
+                        </ul>                       
+                    </nav>           
+        </div>
+
+
+
+
+        <div class="showcase1">
+            <div class="content">
+                <h1>Designing a difference</h1>
+                <p>We think in design and act in innovation, stirring the way people and technology interact.</p>
+            </div>
+        </div>
+
+        <div class="showcase2">
+            <h1>
+                Designing relationships
+            </h1>
+            <p>We work closely with our clients to understand their needs and develop user experience design that unlocks business growth.</p>
+        </div><br>
+        <h1>Services We Provide</h1>
+        <div class="serviceShowcase">
+            
+            <div class="box">
+                <h4>Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum eius a mollitia, quidem ipsa illo dolores quisquam, veniam beatae reiciendis placeat tenetur, cum labore ratione. Accusantium tempora excepturi voluptatem?</p>
+            </div>
+            <div class="box">
+                <h4>Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum eius a mollitia, quidem ipsa illo dolores quisquam, veniam beatae reiciendis placeat tenetur, cum labore ratione. Accusantium tempora excepturi voluptatem?</p>
+            </div>
+            <div class="box">
+                <h4>Title</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum eius a mollitia, quidem ipsa illo dolores quisquam, veniam beatae reiciendis placeat tenetur, cum labore ratione. Accusantium tempora excepturi voluptatem?</p>
+            </div>
+            
+            
+        </div>
+
+        <div class="ourCulture" id="about">
+            <h1>Our Culture</h1>
+            <p>A hub for creativity, humor, and endless love for design</p>
+            <img name='slide' class="slideimg">
+
+        </div>
+
+        <div class="partners">
+
+        </div>
+
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <form action="">
+                <input type="text" placeholder="Full Name"><br>
+                <input type="email" placeholder="E-mail ID"><br>
+                <textarea name="" id="" cols="30" rows="4" placeholder="Tell us about your needs"></textarea><br>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <h1>This is where possibilities are reimagined and breakthroughs are brewed.</h1>
+            <br>
+            <hr>
+            
+            <div class="footermation">
+                <div>
+                    <a>Instagram</a>
+                    <a>LinkedIn</a>
+                    <a>GitHub</a>
+                </div>
+                <div>
+                    <a>Privacy Policy</a>
+                    <a>Terms&Conditions</a>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2021. All rights reserved</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+    
+        images[0] = './images/events_2p66.png';
+        images[1] = './images/outdoor_party_oqh3.png';
+        images[2] = './images/Street_food_re_uwex.png';
+        images[3] = './images/Birthday_cake_2wxy.png';
+        images[4] = './images/Having_fun_re_vj4h.png';
+        images[5] = './images/Party_re_nmwj.png';
+        images[6] = './images/indoor_bike_pwa4.png';
+
+        function changeImg(){
+            document.slide.src = images[i];
+
+            if(i < images.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload= changeImg;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+:root{
+    --letter: #F4ABC4;
+    --navylight :rgb(89, 91, 131);
+    --dark : rgb(6, 9, 48) ;
+    --navy :rgb(51, 52, 86);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: var(--dark);
+    color: #fff;
+
+}
+
+.header{
+    width: 100vw;
+    background-color:var(--navy);
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+
+.brandName{
+    align-items: center;
+    padding: .5rem;
+}
+
+.brandName > img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav_ul{
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+
+}
+
+.nav_ul > li:not(:last-child) {
+    margin-right: 2rem;
+    
+}
+
+.nav_ul>li>a:hover{
+    border-bottom: 2px solid var(--letter);
+}
+
+a{
+    text-decoration: none;
+    color: var(--letter);
+}
+
+h1{
+    color: var(--letter) !important;
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+}
+
+.showcase1{
+    
+    background: url(./images/website_builder.png);
+    background-repeat: no-repeat;
+    margin: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 600px;
+    z-index: -1;
+    color:var(--navy);
+
+}
+
+.showcase1>.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.showcase2 > p{
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.serviceShowcase{
+    display: flex;
+    flex-direction: row; 
+    margin: 1rem 5%;
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+.box{
+    width: 30%;
+    height: auto;
+    border: 2px solid #F4ABC4;
+    border-radius: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #060930;
+    text-align: justify;
+    padding: .5rem;
+    color: var(--navylight);
+    text-indent: 2rem;
+}
+
+.box > h4 {
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1rem;
+    color: #fff;   
+    
+}
+
+.box:hover {
+    background-color: var(--navy);
+    color: var(--letter);
+    box-shadow: 2px 2px 10px var(--letter);
+
+}
+
+
+.ourCulture > p{
+    line-height: 2em;
+    text-align: center;
+}
+
+.slideimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    
+    
+}
+
+.contact{
+    text-align: center;
+    line-height: 2rem;
+}
+
+input,textarea{
+    border: none;
+    border-radius: .6rem;
+    padding: .3rem;
+    border: 0;
+}
+input:hover, textarea:hover{
+    box-shadow: 2px 2px 10px var(--letter);
+}
+textarea{
+    margin-top: .5rem;
+    line-height: 1rem;
+}
+
+.submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 1rem;
+    color: var(--dark);
+    background: var(--letter);
+}
+
+.submit:hover{
+    box-shadow: 2px 2px 10px var(--letter);
+}
+
+.footer{
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 2rem 5rem .5rem 5rem;
+    background-color: rgba(51, 52, 86,.7);
+    line-height: 2rem;
+}
+.footer>hr{
+    background: var(--navylight);
+}
+
+.footermation{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footermation>div> a{
+    cursor: pointer;
+    display: inline;
+    padding: 0 1rem;
+}
+
+.footermation>div>a:hover{
+    color: rgb(243, 217, 242);
+}
+
+.footer>p{
+    text-align: center;
+    user-select: none;
+}
+
+
+@media screen and (max-width:992px){
+   .showcase1{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 70%;
+       margin-bottom: 1.5rem;
+   }
+
+   .slideimg{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 80%;
+       height: auto;       
+       padding: .5rem;
+       }
+
+       .footermation>div> a{
+        
+        display: block;
+        
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    .showcase1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 600px;
+    }
+
+    .serviceShowcase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box{
+        width: 280px;
+        height: auto;
+        margin-top: 1rem;
+       
+        
+    }
+
+
+    .footermation>div> a{
+        
+        display: block;
+        
+    }
+    
+ 
+ }
+
+
+ @media screen and (max-width : 600px){
+     body{
+         font-size: 12px;
+     }
+
+     h1{
+         font-size: .6rem;
+         line-height: normal;
+         text-align: center;
+     }
+
+     .nav_ul{
+         margin-right: 1rem;
+         font-weight: 400;
+     }
+     .nav_ul>li:not(:last-child)
+     {
+         margin-right: .5rem;
+     }
+
+     .showcase1{
+         margin: 4rem .5rem 1rem;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 100%;
+         height: 200px;
+         background-size: cover;
+         background-position: center;
+         padding: 3rem;
+     }
+     .serviceShowcase{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         
+     }
+     .box{
+         width: 280px;
+         height: auto;
+         margin-top: 1rem;
+        
+         
+     }
+
+     
+
+     .slideimg{
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        
+     }
+     .ourCulture{
+         padding: 0%;
+     }
+
+     .contact{
+         margin: .5rem;
+         line-height: 1.5rem;
+     }
+     input{
+         margin-top: .5rem;
+     }
+     textarea{
+         margin: .3rem;
+     }
+     .submit{
+         border: none;
+         width: 70px;
+         height: 30px;
+         font-size: .7rem;
+     }
+
+     .footer{
+         margin-top:1rem ;
+         padding: 1rem 1rem .3rem;
+         line-height: 1rem;
+     }
+     .footermation{
+        display: block;
+        padding: 0 ;
+
+    }
+ }
+
+
